@@ -1,4 +1,4 @@
-package com.getarrays.employeemanager.model;
+package model;
 
 import java.io.Serializable;
 
@@ -13,7 +13,16 @@ public class Employee implements Serializable{
 	private String email;
 	private String jobType;
 	private String imageUrl;
+	private String employeeCode;
 	
+	public String getEmployeeCode() {
+		return employeeCode;
+	}
+
+	public void setEmployeeCode(String employeeCode) {
+		this.employeeCode = employeeCode;
+	}
+
 	public Employee() {
 		
 	}
