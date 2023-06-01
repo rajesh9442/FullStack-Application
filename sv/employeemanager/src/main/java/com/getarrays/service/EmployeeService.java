@@ -1,16 +1,14 @@
-package service;
+package com.getarrays.service;
 
 import java.util.List;
 import java.util.UUID;
 
-import javax.security.auth.login.AccountNotFoundException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import exception.UserNotFoundException;
-import model.Employee;
-import repo.EmployeeRepo;
+import com.getarrays.exception.UserNotFoundException;
+import com.getarrays.model.Employee;
+import com.getarrays.repo.EmployeeRepo;
 
 @Service
 public class EmployeeService {

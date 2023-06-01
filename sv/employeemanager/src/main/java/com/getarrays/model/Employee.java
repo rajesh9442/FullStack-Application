@@ -1,9 +1,10 @@
-package model;
+package com.getarrays.model;
 
 import java.io.Serializable;
 
 import jakarta.persistence.*;
 
+@SuppressWarnings("serial")
 @Entity
 public class Employee implements Serializable{
 	@Id
