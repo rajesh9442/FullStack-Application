@@ -1,4 +1,4 @@
-package com.getarrays.model;
+package com.app.employeemanager.model;
 
 import java.io.Serializable;
 

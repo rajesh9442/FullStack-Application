@@ -1,4 +1,4 @@
-package com.getarrays.exception;
+package com.app.employeemanager.exception;
 
 @SuppressWarnings("serial")
 public class UserNotFoundException extends RuntimeException {

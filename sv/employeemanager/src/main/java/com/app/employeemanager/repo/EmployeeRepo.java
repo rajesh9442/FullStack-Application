@@ -1,11 +1,11 @@
-package com.getarrays.repo;
+package com.app.employeemanager.repo;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.getarrays.model.Employee;
+import com.app.employeemanager.model.Employee;
 
 @Repository
 public interface EmployeeRepo extends JpaRepository<Employee,Long>{
