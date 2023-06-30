@@ -9,10 +9,11 @@ import jakarta.persistence.*;
 public class Employee implements Serializable{
 	@Id
 	@Column(nullable=false,updatable=false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	private String email;
-	private String jobType;
+	private String jobTitle;
 	private String imageUrl;
 	private String employeeCode;
 	
@@ -28,11 +29,11 @@ public class Employee implements Serializable{
 		
 	}
 	
-	public Employee(Long id, String name, String email, String jobType, String imageUrl) {
+	public Employee(Long id, String name, String email, String jobTitle, String imageUrl) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.jobType = jobType;
+		this.jobTitle = jobTitle;
 		this.imageUrl = imageUrl;
 	}
 	
@@ -60,12 +61,12 @@ public class Employee implements Serializable{
 		this.email = email;
 	}
 	
-	public String getJobType() {
-		return jobType;
+	public String getJobTitle() {
+		return jobTitle;
 	}
 	
-	public void setJobType(String jobType) {
-		this.jobType = jobType;
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
 	}
 	
 	public String getImageUrl() {

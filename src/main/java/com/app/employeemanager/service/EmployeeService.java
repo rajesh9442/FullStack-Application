@@ -10,7 +10,10 @@ import com.app.employeemanager.exception.UserNotFoundException;
 import com.app.employeemanager.model.Employee;
 import com.app.employeemanager.repo.EmployeeRepo;
 
+import jakarta.transaction.Transactional;
+
 @Service
+@Transactional
 public class EmployeeService {
 	
 	@Autowired
